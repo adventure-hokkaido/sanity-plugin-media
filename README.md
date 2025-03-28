@@ -1,5 +1,8 @@
 # Sanity Media (for Sanity Studio v3)
 
+> **Warning**
+> Please use `npm` to install and build this package. Using `pnpm` does not respect the lockfile and leads to dependency hell.
+
 > This plugin is for **Sanity Studio v3**.  
 > The Sanity Studio v2 version of this plugin is no longer maintained, but still accessible on the [v2 branch](https://github.com/sanity-io/sanity-plugin-media/tree/studio-v2).
 
@@ -107,14 +110,14 @@ export default defineConfig({
         enabled: true,
         // boolean - enables an optional "Credit Line" field in the plugin.
         // Used to store credits e.g. photographer, licence information
-        excludeSources: ['unsplash'],
+        excludeSources: ['unsplash']
         // string | string[] - when used with 3rd party asset sources, you may
         // wish to prevent users overwriting the creditLine based on the `source.name`
       },
       maximumUploadSize: 10000000
       // number - maximum file size (in bytes) that can be uploaded through the plugin interface
     })
-  ],
+  ]
 })
 ```
 
