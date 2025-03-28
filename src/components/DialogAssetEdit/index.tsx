@@ -336,23 +336,14 @@ const DialogAssetEdit = (props: Props) => {
                           value={currentAsset?.title}
                         />
                         {/* Alt text */}
-                        <FormFieldInputText
+                        <FormFieldInputTextarea
                           {...register('altText')}
                           disabled={formUpdating}
                           error={errors?.altText?.message}
                           label="Alt Text"
                           name="altText"
-                          value={currentAsset?.altText}
-                        />
-                        {/* Description */}
-                        <FormFieldInputTextarea
-                          {...register('description')}
-                          disabled={formUpdating}
-                          error={errors?.description?.message}
-                          label="Description"
-                          name="description"
                           rows={5}
-                          value={currentAsset?.description}
+                          value={currentAsset?.altText}
                         />
                         {/* CreditLine */}
                         {creditLine?.enabled && (
@@ -368,6 +359,16 @@ const DialogAssetEdit = (props: Props) => {
                             }
                           />
                         )}
+                        {/* Description */}
+                        <FormFieldInputTextarea
+                          {...register('description')}
+                          disabled={formUpdating}
+                          error={errors?.description?.message}
+                          label="Notes"
+                          name="description"
+                          rows={5}
+                          value={currentAsset?.description}
+                        />
                       </Stack>
                     </TabPanel>
 
