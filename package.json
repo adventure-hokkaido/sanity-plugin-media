@@ -12,13 +12,10 @@
     "asset",
     "browser"
   ],
-  "homepage": "https://github.com/sanity-io/sanity-plugin-media#readme",
-  "bugs": {
-    "url": "https://github.com/sanity-io/sanity-plugin-media/issues"
-  },
+  "homepage": "https://github.com/adventure-hokkaido/sanity-plugin-media#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sanity-io/sanity-plugin-media.git"
+    "url": "git@github.com:adventure-hokkaido/sanity-plugin-media.git"
   },
   "type": "commonjs",
   "license": "MIT",
