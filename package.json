@@ -1,5 +1,5 @@
 {
-  "name": "@adh/sanity-plugin-media",
+  "name": "@adhokkaido/sanity-plugin-media",
   "version": "3.0.2",
   "description": "A fork of the Sanity Media library plugin with some additional features",
   "keywords": [
