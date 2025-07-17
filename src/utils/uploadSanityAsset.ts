@@ -63,7 +63,7 @@ const uploadSanityAsset$ = (
     mergeMap((existingAsset: SanityAssetDocument | SanityImageAssetDocument | null) => {
       if (existingAsset) {
         return throwError({
-          message: 'Asset already exists',
+          message: `Asset already exists with filename "${existingAsset.originalFilename}"`,
           statusCode: 409
         } as HttpError)
       }
