@@ -65,23 +65,14 @@ export default function Details({
         value={currentAsset?.title}
       />
       {/* Alt text */}
-      <FormFieldInputText
+      <FormFieldInputTextarea
         {...register('altText')}
         disabled={formUpdating}
         error={errors?.altText?.message}
         label="Alt Text"
         name="altText"
+        rows={4}
         value={currentAsset?.altText}
-      />
-      {/* Description */}
-      <FormFieldInputTextarea
-        {...register('description')}
-        disabled={formUpdating}
-        error={errors?.description?.message}
-        label="Description"
-        name="description"
-        rows={5}
-        value={currentAsset?.description}
       />
       {/* CreditLine */}
       {creditLine?.enabled && (
@@ -96,6 +87,16 @@ export default function Details({
           }
         />
       )}
+      {/* Description */}
+      <FormFieldInputTextarea
+        {...register('description')}
+        disabled={formUpdating}
+        error={errors?.description?.message}
+        label="Description"
+        name="description"
+        rows={5}
+        value={currentAsset?.description}
+      />
     </Stack>
   )
 }
