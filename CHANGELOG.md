@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/sanity-io/sanity-plugin-media/compare/v4.1.0...v4.1.1) (2025-12-17)
+
+### Bug Fixes
+
+- allow sanity v5 as peer dependency ([#270](https://github.com/sanity-io/sanity-plugin-media/issues/270)) ([be3d114](https://github.com/sanity-io/sanity-plugin-media/commit/be3d11422e019a082f2428db99b4b4a81d5131fb))
+
 ## [4.1.0](https://github.com/sanity-io/sanity-plugin-media/compare/v4.0.0...v4.1.0) (2025-12-04)
 
 ### Features
